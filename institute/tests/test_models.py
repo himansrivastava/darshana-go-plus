@@ -6,7 +6,6 @@ from institute.models import Institute
 class TestInstituteModel(TestData):
     """Test for Institute model"""
 
-    # Test Institute object is created with correct data
     def test_institute_model_created_with_correct_data(self):
         """Test Institute object is created with correct data"""
 

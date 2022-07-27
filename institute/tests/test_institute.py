@@ -38,28 +38,24 @@ class InstituteAPITest(TestData):
             "status": "InActive",
         }
 
-    # Test retrieving a list of institutes
     def test_list_institutes(self):
         """Test retrieving a list of institutes"""
         res = self.client.get(INSTITUTE_URL)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(len(res.json()), 1)
 
-    # Test retrieving a institute
     def test_retrieve_institute(self):
         """Test retrieving a institute"""
         url = get_detail_url(self.institute.pk)
         res = self.client.get(url)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
 
-    # Test creating a salesorder
     def test_create_institute(self):
         """Test creating a institute"""
         res = self.client.post(INSTITUTE_URL, self.valid_payload)
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         self.assertEqual(res.json()["id"], "INS002")
 
-    # Test updating a salesorder with valid payload
     def test_update_institute(self):
         """Test updating a institute with valid payload"""
         url = get_detail_url(self.institute.pk)
@@ -67,7 +63,6 @@ class InstituteAPITest(TestData):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.json()["name"], "Test Institute Edited")
 
-    # Test partial update a salesorder with valid payload
     def test_partial_update_institute(self):
         """Test partial update a institute with valid payload"""
         url = get_detail_url(self.institute.pk)
@@ -75,7 +70,6 @@ class InstituteAPITest(TestData):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.json()["status"], "InActive")
 
-    # Test deleting a salesorder
     def test_delete_institute(self):
         """Test deleting a institute"""
         url = get_detail_url(self.institute.pk)
