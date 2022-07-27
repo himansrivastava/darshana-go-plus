@@ -17,3 +17,6 @@ class Institute(models.Model):
     address = models.CharField(max_length=200)
     contact_person = models.CharField(max_length=100)
     status = models.CharField(max_length=20, choices=Status.choices)
+
+    def __str__(self):
+        return self.id
