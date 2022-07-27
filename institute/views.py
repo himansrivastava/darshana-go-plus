@@ -9,3 +9,4 @@ class InstituteViewSet(viewsets.ModelViewSet):
 
     queryset = Institute.objects.all()
     serializer_class = serializers.InstituteSerializer
+    filter_fields = ("status",)
