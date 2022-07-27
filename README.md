@@ -22,4 +22,4 @@ Important Points:
     - Add institute as FK in those models.
     - Create nested serializers for those models.
     - Override the create and update methods in the serializer.
-    - I have skipped these due to pausity of time. However you can make a judgement whether the above solution is right or not.
+    - I have skipped these due to pausity of time.
