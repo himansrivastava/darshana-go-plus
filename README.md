@@ -23,3 +23,6 @@ The test project for go plus
     - Create nested serializers for those models.
     - Override the create and update methods in the serializer.
     - I have skipped these due to pausity of time.
+1. Not worked on the logger yet.
+
+**Please share your feedback:**
