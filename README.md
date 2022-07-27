@@ -2,7 +2,7 @@
 
 The test project for go plus
 
-Steps:
+**Steps:**
 
 1. Clone the repo.
 1. Create & activate virtual env and install the dependencies in requirements.txt
@@ -12,7 +12,7 @@ Steps:
 1. goto /admin url and login to admin
 1. goto /swagger to see the api documentation
 
-Important Points:
+**Important Points:**
 
 1. Have made all the endpoints for the Institute api.
 1. Added filter of status to the GET endpoint.
