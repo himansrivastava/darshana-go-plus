@@ -8,3 +8,4 @@ Steps:
 1. run python manage.py test to check that the tests pass.
 1. goto /admin url and login to admin
 1. goto /swagger to see the api documentation
+1. Check the filter on the GET endpoint too
