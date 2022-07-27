@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Institute
+
+# register the Institute model with the admin
+admin.site.register(Institute)
