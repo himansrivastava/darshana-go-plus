@@ -25,4 +25,4 @@ The test project for go plus
     - I have skipped these due to pausity of time.
 1. Not worked on the logger yet.
 
-**Please share your feedback:**
+**Please share your feedback**
