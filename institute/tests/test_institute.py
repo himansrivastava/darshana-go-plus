@@ -26,6 +26,7 @@ class InstituteAPITest(TestData):
             "address": "Test Address 2",
             "contact_person": "Test Contact Person 2",
             "status": "Active",
+            "branches": "Test Branches 2",
         }
         self.put_payload = {
             "id": "INS001",
@@ -33,6 +34,7 @@ class InstituteAPITest(TestData):
             "address": "Test Address Edited",
             "contact_person": "Test Contact Person...",
             "status": "Active",
+            "branches": "Test Branches",
         }
         self.patch_payload = {
             "status": "InActive",

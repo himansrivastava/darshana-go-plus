@@ -17,4 +17,5 @@ class TestData(TestCase):
             address="Test Address",
             contact_person="Test Contact Person",
             status="Active",
+            branches="Test Branches",
         )
