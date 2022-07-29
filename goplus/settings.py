@@ -161,9 +161,16 @@ LOGGING = {
             "filename": "./django.log",
             "formatter": "app",
         },
+        "console": {
+            "class": "logging.StreamHandler",
+        },
     },
     "loggers": {
-        "django": {"handlers": ["file"], "level": DJANGO_LOG_LEVEL, "propagate": True},
+        "django": {
+            "handlers": ["file", "console"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": True,
+        },
     },
     "formatters": {
         "app": {
