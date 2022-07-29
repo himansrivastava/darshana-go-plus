@@ -9,6 +9,7 @@ The test project for go plus
 1. run makemigrations, migrate and collectstatic.
 1. create django superuser.
 1. run python manage.py test to check that the tests pass.
+1. run server using python manage.py runserver.
 1. goto /admin url and login to admin
 1. goto /swagger to see the api documentation
 
@@ -22,7 +23,7 @@ The test project for go plus
     - Add institute as FK in those models.
     - Create nested serializers for those models.
     - Override the create and update methods in the serializer.
-    - I have skipped these due to pausity of time. I have pinned a repository in my github account which gives an example of how to make the nested serializer. You can check it out.
+    - I have skipped these due to paucity of time. I have pinned a repository in my github account which gives an example of how to make the nested serializer. You can check it out.
 1. Check at the bottom of the settings.py file for LOGGING setup.
 
 **Please share your feedback**
