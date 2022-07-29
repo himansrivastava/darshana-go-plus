@@ -25,5 +25,6 @@ The test project for go plus
     - Override the create and update methods in the serializer.
     - I have skipped these due to paucity of time. I have pinned a repository in my github account which gives an example of how to make the nested serializer. You can check it out.
 1. Check at the bottom of the settings.py file for LOGGING setup.
+1. Added logger in serializers.py of the Institute api.
 
 **Please share your feedback**
