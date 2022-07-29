@@ -10,7 +10,7 @@ app_name = "instituteapi"
 
 router = DefaultRouter()
 
-router.register("institute", views.InstituteViewSet, basename="institute")
+router.register("", views.InstituteViewSet, basename="institute")
 
 urlpatterns = [
     path("", include(router.urls)),
